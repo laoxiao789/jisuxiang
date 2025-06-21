@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faSearch, faTimes, faChevronDown, faBook, faCode, faCloud, faBell, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import categories from '@/config/categories';
-import tools from '@/config/tools';
+import categories from '../config/categories';
+import tools from '../config/tools';
 import { useRouter } from 'next/navigation';
-import ThemeToggle from '@/components/ThemeToggle';
-import LanguageToggle from '@/components/LanguageToggle';
+import ThemeToggle from '../components/ThemeToggle';
+import LanguageToggle from '../components/LanguageToggle';
 import Link from 'next/link';
-import { useLanguage } from '@/context/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Home() {
   const { t, language } = useLanguage();
